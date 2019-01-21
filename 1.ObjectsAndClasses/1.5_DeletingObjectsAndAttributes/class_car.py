@@ -13,13 +13,10 @@ class CarModel:
         return("This is Ford Mustang. It has "+ str(self.num_of_wheels)+" wheels.")
 
 a = CarModel()
-print(a.num_of_wheels)
 print(dir(a))
 
-##Deleting the attribute using delattr
-delattr(a,'num_of_wheels')
+#delattr(a,"num_of_wheels")
+#print(a.num_of_wheels)
 
-#Deleting the attribute using del
-#del a.num_of_wheels
-
+del a.num_of_wheels
 print(a.num_of_wheels)

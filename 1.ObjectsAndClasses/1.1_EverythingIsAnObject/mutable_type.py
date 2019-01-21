@@ -1,25 +1,15 @@
 # Mutable Types
 # Lists are objects
 
-myList = [10, 'My string', 12]
-print("List is type ", type(myList))
+myList = [10, "My String", 12]
+print("myList type is ", type(myList), " and ID is ", id(myList))
 
-# Dictionaries are objects
-numberDict = {1: 'one', 2: 'two'}
-print("Dictionary is type ", type(numberDict))
+myDictionary = {1:"one", 2:"two"}
+print("myDictionary type is ", type(myDictionary), " and ID is ", id(myDictionary))
 
-# Lets focus on what is mutable
-z = myList
-
-print(z)
-print(myList)
-
-# Lets change the value of x by adding another element
-# Check if z also has changed?
+myNewList = myList
+print("myNewList type is ", type(myNewList), " and ID is ", id(myNewList))
 
 myList.append(14)
-
-print(z)
-print(myList)
-
-# the list object does have mutating methods, so it can be changed.
+print("Value of myList now is ", myList, " and ID is ", id(myList))
+print("Value of myNewList is ", myNewList, " and ID is ", id(myNewList))
