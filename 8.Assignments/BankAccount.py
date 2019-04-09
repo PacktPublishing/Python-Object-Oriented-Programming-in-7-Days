@@ -19,8 +19,11 @@ class BankAccount:
             return False
         else:
             self.balance -= withdrawAmount
-            print("Withdrawn Amout", self.balance)
-            return True
+            #print("Withdrawn Amout", self.balance)
+            #return True
+
+    def getBalance(self):
+        return self.balance
 
 
 account = BankAccount(1000)
